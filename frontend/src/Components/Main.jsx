@@ -9,22 +9,6 @@ const Main = () => {
     setSelectedFile(event.target.files[0]);
   };
 
-  // const handleUpload = async () => {
-  //   try {
-  //     const formData = new FormData();
-  //     formData.append('image', selectedFile);
-
-  //     const response = await axios.post('http://localhost:8000/api/predict', formData, {
-  //       headers: {
-  //         'Content-Type': 'multipart/form-data',
-  //       },
-  //     });
-
-  //     setPrediction(response.data.prediction);
-  //   } catch (error) {
-  //     console.error('Error uploading image:', error);
-  //   }
-  // };
 
   const handleUpload = async () => {
     try {
